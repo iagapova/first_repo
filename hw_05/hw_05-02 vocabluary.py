@@ -1,13 +1,3 @@
-#a = input("Enter your name: ")
-
-
-#age = int(input('ENter your age: '))
-##city = input('Enter your city: ')
-#print('Hello', a)
-#print('you are', age)
-#print('from', city)
-
-#print(dir(a))
 articles_dict = [
     {
         "title": "Endless ocean waters.",
