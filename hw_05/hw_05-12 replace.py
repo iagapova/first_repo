@@ -8,6 +8,7 @@ def replace_spam_words(text, spam_words):
     
     # Создаем регулярное выражение, объединяя запрещенные слова через |
     pattern = '|'.join(map(re.escape, spam_words)) 
+    #print('pattern = ', pattern)
     text = re.sub(pattern, replace_with, text, flags=re.IGNORECASE)
     return(text)
 

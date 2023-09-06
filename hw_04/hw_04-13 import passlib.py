@@ -1,9 +1,5 @@
 from pathlib import Path
 
-p = Path('/Users/irina.agapova/Documents')  # p Вказує на теку /Users/irina.agapova/Documents
-#for i in p.iterdir():
-#    print(i.name)  # Виведе у циклі імена всіх тек та файлів у /Users/irina.agapova/Documents
-
 def parse_folder(path):
     files = []
     folders = []
@@ -19,5 +15,3 @@ def parse_folder(path):
     print(files)
     print(folders)
     return files, folders
-
-parse_folder(p)

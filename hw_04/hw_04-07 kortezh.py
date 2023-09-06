@@ -1,4 +1,3 @@
-aaa = [0, 1, 3, 2, 0, 2]
 points = {
     (0, 1): 2,
     (0, 2): 3.8,
@@ -21,5 +20,14 @@ def calculate_distance(coordinates):
                     s += value
         # print(s)
         return s
+    
+    
+    
         
-calculate_distance(aaa)
+        
+        
+            
+        
+            
+        
+    
