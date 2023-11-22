@@ -1,3 +1,8 @@
-list   =      [ 2,    4, 4]
-name =   'rtr'   +'43fd'
- print( list)
+my_list = [0, 1, 2, 3]
+
+new = 'abc'
+
+
+my_list.extend(new)
+
+print(my_list)

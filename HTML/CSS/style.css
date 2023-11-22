@@ -1,0 +1,14 @@
+/* здесь находятся комментарии */
+p { color: red; background-color: yellow;}
+body {
+    font-size: small;
+    background-image: url(http://web.mindcraft.pro/images/bg.jpg);
+    /* font-size: large; */
+}
+p.special { color: orange; }
+h3.special { color: green; }
+li em { color: olive; }
+h1#page-header {font-family: Georgia;}
+h2 p strong{font-family: Pacifico; size: large;}
+/* или для всех классов special */
+/*    .special { color: blueviolet; }  */

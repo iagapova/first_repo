@@ -1,4 +1,5 @@
 message = "Cel4lo my l!ittle friends!"
+# message = "SQLVMG TMVL ITKWPWT AXTQB"
 offset = 1
 encoded_message = ""
 print(ord("a"), ord("z"))
@@ -14,5 +15,5 @@ for ch in message:
         encoded_message += chr(pos + 97)
     else:
         encoded_message += ch
-    
+
 print(encoded_message)

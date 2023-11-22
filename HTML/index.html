@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Курс программирования</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ссылка -->
+    <a href="http://www.mindcraft.pro">Курс программирования</a>
+    <h3>Times</h3>
+<p>Описание и история шрифта Times.</p>
+<hr>
+<h1 id="page-header">Georgia</h1>
+<p>Описание и история шрифта Georgia.</p>
+<a href="tel:+79999999999">3воните нам бесплатно по телефону (999) 999-9999</a>
+<!-- список -->
+<ol>
+  <li>Булгаков</li>
+  <li>Достоевский</li>
+  <li>Толстой</li>
+  <li>Чехов</li>
+</ol>
+<dl>
+  <dt>Тег</dt>
+    <dd>Тег — это специальный символ разметки, который применяется для вставки различных элементов на веб-страницу таких как: рисунки, таблицы, ссылки и др., и для изменения их вида.</dd>
+  <dt>HTML-документ</dt>
+    <dd>Обычный текстовый файл, который может содержать в себе текст, теги и стили. Изображения и другие объекты хранятся отдельно. Содержимое такого файла обычно называется HTML-код.</dd>
+  <dt>Сайт</dt>
+  <dd>Cайт — это набор отдельных веб-страниц, которые связаны между собой ссылками и единым оформлением.</dd>
+</dl>
+<!-- таблица -->
+    <table>
+      <tr>
+       <th>№</th>
+       <th>Товар</th>
+       <th>Цена</th>
+      </tr>
+      <tr>
+       <td>1</td>
+       <td>Яблоки</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>2</td>
+       <td>Помидоры</td>
+       <td>60</td>
+     </tr>
+     <tr>
+       <td colspan="2">Итого</td>
+       <td>110</td>
+     </tr>
+    </table>
+    <hr>
+    <!-- многострочный текст -->
+
+     <textarea rows="4" cols="50">
+      Озеро Байкал – огромное древнее озеро в горах Сибири к северу от монгольской границы. Байкал считается самым глубоким озером в мире. Он окружен сетью пешеходных маршрутов, называемых Большой байкальской тропой. Деревня Листвянка, расположенная на западном берегу озера, – популярная отправная точка для летних экскурсий. Зимой здесь можно кататься на коньках и собачьих упряжках.
+      </textarea>
+
+    <form>
+      Имя:<br>
+      <input type="text" name="firstname" id="firstname" value="input naaaaame"><br>
+      Фамилия:<br>
+      <input type="text" name="lastname" id="lastname">
+    </form>
+    <hr>
+    <!-- авторизация -->
+    <h1>Авторизация</h1>
+<form>
+  Имя пользователя
+  <br>
+  <input type="text" name="login">
+  <br>
+  Пароль
+  <br>
+  <input type="password" name="password">
+</form>
+<input type="checkbox" checked="checked"> checkbox <br>
+<input type="color"><br>
+<input type="datetime"><br>
+<input type="datetime-local"><br>
+<input type="radio"><br>
+<input type="range"><br>
+<input type="search"><br>
+<h1>Сколько Вам лет?</h1>
+<form>
+  <input type="radio" name="age" value="menee18" checked="checked"> менее 18<br>
+  <input type="radio" name="age" value="ot18do35"> от 18 до 35<br>
+  <input type="radio" name="age" value="ot36do60"> от 36 до 60<br>
+  <input type="radio" name="age" value="bolee60"> более 60<br>
+</form>
+
+<h1>Какую музыку Вы слушаете?</h1>
+<form>
+  <input type="checkbox" name="punk">Панк-рок<br>
+  <input type="checkbox" name="indie">Инди-рок<br>
+  <input type="checkbox" name="techno">Техно<br>
+  <input type="checkbox" name="rockabilly">Рокабилли<br>
+</form>
+<p>Какая ваша любимая группа восьмидесятых?
+  <select name="EightiesFave">
+    <option value="1">The Cure</option>
+    <option value="2">Cocteau Twins</option>
+    <option value="3">Tears for Fears</option>
+    <option value="4">Thompson Twins</option>
+    <option value="5">Everything But the Girl</option> 
+    <option value="6">Depeche Mode</option>
+    <option value="7">The Smiths</option>
+    <option value="8">New Order</option>
+  </select>
+</p>
+<br>
+<p>Какая ваша любимая группа восьмидесятых?
+  <select name="EightiesFave" size="6" multiple>
+    <option value="1">The Cure</option>
+    <option value="2">Cocteau Twins</option>
+    <option value="3" selected="selected">Tears for Fears</option>
+    <option value="4" selected="selected">Thompson Twins</option>
+    <option value="5">Everything But the Girl</option> 
+    <option value="6">Depeche Mode</option>
+    <option value="7">The Smiths</option>
+    <option value="8">New Order</option>
+  </select>
+</p>
+<h1>Форма авторизации</h1>
+<form>
+  Имя: <input type="text" name="login">
+  <br>
+  Пароль: <input type="password" name="password">
+  <br>
+  <input type="submit">
+  <input type="reset" value="Начать заново">
+</form>
+
+<hr>
+    <h1>Связаться с нами!</h1>
+    <form id="feedback">
+        Фамилия:
+        <br>
+        <input type="text" name="lastname" id="lastname"><br>
+        Имя:
+        <br>
+        <input type="text" name="firstname" id="firstname"><br>
+        Отчество:
+        <br>
+        <input type="text" name="patronymic" id="patronymic"><br>
+        <p>Тема сообщения:
+            <select name="topic" id="topic">
+                <option value="1">Предложение</option>
+                <option value="1">Проблема</option>
+                <option value="1">Жалоба</option>
+            </select>
+         </p>
+        <input type="checkbox" id="email"> Получить ответ по e-mail
+        <br>
+        <br>
+        <input type="submit" value="Отправить сообщение" id="send">
+        <input type="reset" value="Очистить форму" id="clear">
+    </form>
+    <h3 class="special">Этот заголовок будет зеленого цвета</h3>
+    <p>Этот текст будет стандартного цвета</p>
+    <p class="special">Этот текст будет оранжевого цвета</p>
+    <p class="special">Этот текст будет оранжевого цвета</p>
+    <h3 class="special">Этот заголовок будет зеленого цвета</h3>
+
+    <h2>Селекторы <em>потомков</em></h2>
+    <p><em>Абзац</em>, в котором некоторые слова отображаются <em>курсивом</em></p>
+    <ul>
+      <li>Элемент списка 1</li>
+      <li><em>Элемент списка 2</em></li>
+      <li><em>Элемент списка 3</em></li>
+  <hr>
+  <h2>Сказка. <strong>Маша и медведь</strong></h2>
+    <p><strong>Ж</strong>или-были дедушка да бабушка. Была у них внучка Машенька.</p>
+    <p><strong>С</strong>обрались раз подружки в лес по грибы да по ягоды. Пришли звать с собой и Машеньку.</p>
+</body>
+</html>
