@@ -1,8 +1,31 @@
-my_list = [0, 1, 2, 3]
+import requests
+# https://api.privatbank.ua/p24api/pubinfo?exchangecoursid=11
 
-new = 'abc'
+
+class ApiClient:
+    def __init__(self, fetch: requests):
+        self.fetch = fetch
+
+    def get_json(self, url):
+        response = self.fetch.get(url)
+        return response.json()
 
 
-my_list.extend(new)
+def pretty_view(data: list[dict]):
+    result = [{f"{el.get('ccy')}": {"buy": float(
+        el.get('buy')), "sale": float(el.get('sale'))}} for el in data]
+    pattern = '|{:^10}|{:^10}|{:^10}'
+    print(pattern.format('currency', 'sale', 'buy'))
+    for el in result:
+        currency, *_ = el.keys()
+        buy = el.get(currency).get('buy')
+        sale = el.get(currency).get('sale')
+        print(pattern.format(currency, sale, buy))
 
-print(my_list)
+
+if __name__ == "__main__":
+    client = ApiClient(requests)
+    data = client.get_json("https://api.privatbank.ua/p24api/pubinfo?exchangecoursid=11"
+
+                           )
+    pretty_view(data)

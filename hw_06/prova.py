@@ -1,0 +1,13 @@
+fh = open('test.txt', 'w+')
+fh.write('first line\nsecond line\nthird line\n')
+fh = open('test.txt', 'r')
+line = fh.readlines()
+print('-=-=', line)
+# fh.write('fourth line\nfifth line\nsixth line')
+fh = open('test.txt', 'r')
+line = fh.readlines()
+print('---', line)
+line = "".join(line)
+print('+++', line)
+
+fh.close()
