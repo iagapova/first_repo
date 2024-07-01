@@ -50,8 +50,8 @@ print()
 for i in iter(fr0):
     print(i)
 
-# fr = FRange2D(0, 2, 0.5, 4)
-# for row in fr:
-#     for i in row:
-#         print(i, end=" ")
-#     print()
+fr = FRange2D(0, 2, 0.5, 4)
+for row in fr:  # fr это итератор класса FRange2D
+    for i in row:  # row это итератор класса FRange
+        print(i, end=" ")
+    print()
