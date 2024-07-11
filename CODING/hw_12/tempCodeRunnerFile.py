@@ -1,0 +1,5 @@
+first = persons.read_from_file()
+# first.save_to_file()
+# second = first.read_from_file()
+# second.save_to_file()
+# third = second.read_from_file()
